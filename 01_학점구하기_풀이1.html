@@ -32,18 +32,30 @@
         // 2. 문자를 숫자로.
         value = parseInt(value);
 
-        // 3. 학점 계산 후
-        if(value >= 90 && value <=100){
-            alert(value + '점수의 점수의 학점은? A 입니다');
-        }else if(value >= 80 && value <= 89){
-            alert(value + '점수의 점수의 학점은? B 입니다');
-        }else if(value >= 70 && value <= 79){
-            alert(value + '점수의 점수의 학점은? C 입니다');
-        }else if(value >= 60 && value <= 69){
-            alert(value + '점수의 점수의 학점은? D 입니다');
-        }else{
-            alert(value + '점수의 점수의 학점은 F 입니다')
+        a = 'F';
+        function b(){
+            document.write(value + '점수의 학점은 ' + a + ' 입니다.')
         }
+
+        // 3. 학점 계산 후
+        if(value>=90){
+            a = 'A';
+            b();
+        }else if(value>=80){
+            a = 'B';
+            b();
+        }else if(value>=70){
+            a = 'C';
+            b();
+        }else if(value>=60){
+            a = 'D';
+            b();
+        }else{
+            b();
+        }
+
+
+
 
         // 4. 학점 출력
 
